@@ -1,30 +1,30 @@
 import React, { useEffect, createContext, useReducer, useContext } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  useHistory,
-} from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import IotCenter from "./components/iotcenter/IotCenter";
-import LendingPage from "./components/lending/Lending";
-import LendeeDashboard from "./lendee/screens/Dashboard";
-import LenderDashboard from "./lender/screens/Dashboard";
+import Home from "./shared/home/Home";
+import Dashboard from "./lender/screens/Dashboard";
+import Error404 from "./shared/error404/Error404";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        {/* <Navbar/>
-      <Route path="/" exact strict component={Home}/>
-      <Route path="/iot-center" exact strict component={IotCenter}/>
-      <Route path="/lending-page" exact strict component={LendingPage} /> */}
-        <Route path="/lendee" component={LendeeDashboard} />
-        <Route path="/lender" component={LenderDashboard} />
-      </Router>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/lender" component={Dashboard} />
+        {/* <Route exact path="/about" component={About} /> */}
+        {/* <Route exact path="/contact" component={Contact} />
+        <Route exact path="/login" component={SignIn} />
+        <Route exact path="/register" component={SignUp} /> */}
+
+        {/* Private Route available to only authenticated User */}
+        {/* <PrivateRoute path="/dashboard" component={Dashboard} />
+        <PrivateRoute path="/new-resume" component={New_resume} />
+        <PrivateRoute path="/template-a" component={TemplateA} /> */}
+
+        {/* Error 404 - Page Not Found */}
+        <Route path="*" component={Error404} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

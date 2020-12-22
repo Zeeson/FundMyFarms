@@ -113,7 +113,7 @@ function Overview({
                         className="progress-bar"
                         role="progressbar"
                         style={{ width: `${campaign.currentAmountPer}%` }}
-                        aria-valuenow={`${campaign.currentAmountPer}`}
+                        aria-valuenow={campaign.currentAmountPer}
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>

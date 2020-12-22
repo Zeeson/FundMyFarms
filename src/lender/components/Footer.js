@@ -48,7 +48,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="row mx-0 mt-4 mt-md-2 pt-4 pt-md-5 social-footer-icons-container text-center justify-content-center justify-content-md-start">
+        <div className="mx-0 mt-4 mt-md-2 pt-4 pt-md-5 social-footer-icons-container text-center justify-content-center justify-content-md-start">
           <ul className="nav social-footer-icons">
             <li>
               <a href="">
