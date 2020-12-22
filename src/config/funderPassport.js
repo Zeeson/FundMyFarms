@@ -9,8 +9,7 @@ const JWTstrategy = require('passport-jwt').Strategy;
 const ExtractJWT = require('passport-jwt').ExtractJwt;
 const Funder = require("../models/fundersModel");
 
-
-  // owner
+  // funder
   passport.use(
     'registerFunder',
     new LocalStrategy(

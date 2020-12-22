@@ -90,10 +90,10 @@ app.use("/contact-us", contactUrl);
 
 if (process.env.NODE_ENV === 'production') {
   // app.use(express.static('./client/source/app.js'));
-  app.use(express.static('client/build'));
+  app.use(express.static('fundmyfarm_client/build'));
   // app.use(express.static(path.join(__dirname, "client", "build")));
   app.get('*',(req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'fundmyfarm_client', 'build', 'index.html'));
   });
 
 }
