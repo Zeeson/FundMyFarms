@@ -2,7 +2,9 @@ import React, { useEffect, createContext, useReducer, useContext } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./shared/home/Home";
-import Dashboard from "./lender/screens/Dashboard";
+import Overview from "./lender/screens/Overview";
+import LendingMarket from "./lender/screens/LendingMarket";
+import PaymentPage from "./lender/screens/PaymentPage";
 import Error404 from "./shared/error404/Error404";
 
 function App() {
@@ -10,11 +12,11 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/lender" component={Dashboard} />
-        {/* <Route exact path="/about" component={About} /> */}
-        {/* <Route exact path="/contact" component={Contact} />
-        <Route exact path="/login" component={SignIn} />
-        <Route exact path="/register" component={SignUp} /> */}
+        <Route exact path="/lender/lending-market" component={LendingMarket} />
+        <Route exact path="/lender/overview" component={Overview} />
+        <Route exact path="/lender/view-campaign/2" component={PaymentPage} />
+        {/* <Route exact path="/login" component={SignIn} />
+        <Route exact path="/register" component={SignUp} />  */}
 
         {/* Private Route available to only authenticated User */}
         {/* <PrivateRoute path="/dashboard" component={Dashboard} />
