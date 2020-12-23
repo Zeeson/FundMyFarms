@@ -38,7 +38,7 @@ export default class MainNavbar extends Component  {
         <Navbar bg="success" expand="lg" >
         {/* <Navbar.Brand className="navbar-brand font-weight-bolder text-light ml-5 mr-4 nav-text-head tractive-logo" href="/">Tractive</Navbar.Brand> */}
         <NavLink className="navbar-brand font-weight-bolder text-light ml-5 mr-4 nav-text-head tractive-logo" to="/">
-            FundMyFarm
+            TractiveEngine
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -46,11 +46,15 @@ export default class MainNavbar extends Component  {
 
         <NavDropdown className="text-white" bg="success"  title="Our Services" id="basic-nav-dropdown">
         <li className="nav-item">
-            <NavLink className="nav-link text-success font-weight-bold" to="/lending-page">Lending Services
-            </NavLink>
-        </li>
-        <li className="nav-item">
-             <NavLink className="nav-link text-success font-weight-bold" to="/iot-center">Agritech Consultancy
+             <NavLink className="nav-link text-success font-weight-bold" to="/iot-center">IoT Center
+             </NavLink>
+         </li>
+         <li className="nav-item">
+             <NavLink className="nav-link text-success font-weight-bold" to="/farmer-center">Connecting farmers to fleets
+             </NavLink>
+         </li>
+         <li className="nav-item">
+             <NavLink className="nav-link text-success font-weight-bold" to="/lending-page">Lending Services
              </NavLink>
          </li>
          <li className="nav-item">
@@ -127,11 +131,15 @@ export default class MainNavbar extends Component  {
             {!localStorage.user &&
                   <NavDropdown className="text-white"  title="Login" id="basic-nav-dropdown">
               <li className="nav-item">
-                    <NavLink className="nav-link text-success font-weight-bold" to="/login-lender">Lender
+                    <NavLink className="nav-link text-success font-weight-bold" to="/login-farmer">Farmer
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink className="nav-link text-success font-weight-bold" to="/login-lendee">Lendee
+                    <NavLink className="nav-link text-success font-weight-bold" to="/login-owner">Fleet Owner
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink className="nav-link text-success font-weight-bold" to="/login-agent">Agent
                     </NavLink>
                 </li>
             </NavDropdown>
@@ -139,14 +147,17 @@ export default class MainNavbar extends Component  {
              { !localStorage.user &&
                <NavDropdown className="text-white" bg="success"  title="Join Us" id="basic-nav-dropdown">
                <li className="nav-item">
-                    <NavLink className="nav-link text-success font-weight-bold" to="/register-lender">Lender
+                    <NavLink className="nav-link text-success font-weight-bold" to="/farmer-register">Farmer
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink className="nav-link text-success font-weight-bold" to="/register-lendee">Lendee
+                    <NavLink className="nav-link text-success font-weight-bold" to="/owner-register">Fleet Owner
                     </NavLink>
                 </li>
-                
+                <li className="nav-item">
+                    <NavLink className="nav-link text-success font-weight-bold" to="/agent-register">Agent
+                    </NavLink>
+                </li>
              </NavDropdown>
              }
         </ul>
