@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FundMyFarm V1.0
 
 Official Version 1.0 web application for FundMyFarm Web app
@@ -14,6 +15,10 @@ you can contact @Zeeson for help
 ---
 
 FundMyFarm is aimed at making smallholder farmers to have access to informal credit facility without any hassle whatsoever. We also make it possible for anyone who love farming but do not have to do it, to grow together with the smallholder farmers as they put smiles in the face of downtrodden while at the same time, their resources is working for them.   
+=======
+TractiveEngine project is aiming at making farmers' access to tractors and other implements an easier experience.
+This will go along way to improve farm operations.
+>>>>>>> 4fb824d62e3da61ee65d50acf04237ec8d446b22
 
 ---
 
@@ -28,8 +33,8 @@ To contribute to this project:
 ### Setup Steps
 * Fork repo
 * Clone your fork to your local environment
-* run `cd FundMyFarms` in the terminal
-* run `git remote add upstream https://github.com/Zeeson/FundMyFarms`
+* run `cd Tractive` in the terminal
+* run `git remote add upstream https://github.com/BuildForSDGCohort2/Tractive.git`
 * run `npm install` in the terminal
 * create .env file and then copy the contents of env.test to the .env file created
 * run `npm run dev` in the terminal
