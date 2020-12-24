@@ -19,7 +19,7 @@ function Home() {
       <HomeNav />
       <main>
         <section className="mt-3" id="hero">
-          <div className="row">
+          <div className="row hero-div">
             <div className="col-md-6 hero-content py-5">
               <h1 className="hero-heading mt-2">
                 A Flexible and Riskless Farming Lending System!
@@ -89,7 +89,7 @@ function Home() {
               <img src={Rectangle} alt="process" /> <div>Lenders</div>
             </div>
             <div className="lenders-step process-steps d-flex justify-content-between">
-              <div className="step-item text-center">
+              <div className="step-item step-1 text-center">
                 <h3>Step 1</h3>
                 <p>
                   Click the Get started link above or the signup link below,
@@ -174,7 +174,6 @@ function Home() {
           </div>
         </section>
         <section id="quotes">
-          <img src={Farm} alt="Farm img" className="bg-image" />
           <div className="quotes-content text-center mx-auto">
             <img src={Quote} alt="quote img" width="80" height="80" />
             <h3>Farming Is The New Gold </h3>
