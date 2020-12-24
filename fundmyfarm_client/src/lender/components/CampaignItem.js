@@ -27,7 +27,11 @@ function CampaignItem({
               className="progress-bar"
               role="progressbar"
               style={{ width: `${currentAmountPer}%` }}
+<<<<<<< HEAD
               aria-valuenow={currentAmountPer}
+=======
+              aria-valuenow={`${currentAmountPer}`}
+>>>>>>> 5da829ea92b683b20790487744f82ea38c098d54
               aria-valuemin="0"
               aria-valuemax="100"
             ></div>
