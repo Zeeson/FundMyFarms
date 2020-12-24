@@ -1,3 +1,18 @@
+# FundMyFarm V1.0
+
+Official Version 1.0 web application for FundMyFarm Web app
+
+---
+
+Team: FundMyFarm
+
+---
+
+A guide on how to use the repo!
+you can contact @Zeeson for help
+
+---
+
 FundMyFarm is aimed at making smallholder farmers to have access to informal credit facility without any hassle whatsoever. We also make it possible for anyone who love farming but do not have to do it, to grow together with the smallholder farmers as they put smiles in the face of downtrodden while at the same time, their resources is working for them.   
 
 To contribute to this project:
