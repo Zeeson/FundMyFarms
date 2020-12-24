@@ -7,10 +7,10 @@ import LendingMarket from "./lender/screens/LendingMarket";
 import PaymentPage from "./lender/screens/PaymentPage";
 import Error404 from "./shared/error404/Error404";
 import FundeeRegister from "./lendee/screens/FundeeRegister";
-import FunderRegister from "./lender/screens/FunderRegister";
 
 import FundeeLogin from "./lendee/screens/FundeeLogin";
-import FunderLogin from "./lender/screens/FunderLogin";
+
+import LenderDashboard from "./lender/screens/Dashboard";
 
 import JoinUs from "./shared/JoinUs/JoinUsPage";
 import Login from "./shared/Login/LoginPage";
@@ -21,15 +21,12 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/lender/lending-market" component={LendingMarket} />
-        <Route exact path="/lender/overview" component={Overview} />
-        <Route exact path="/lender/view-campaign/2" component={PaymentPage} />
+
         <Route exact path="/register" component={JoinUs} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/lendee/register" component={FundeeRegister} />
-        <Route exact path="/lender/register" component={FunderRegister} />
         <Route exact path="/lendee/login" component={FundeeLogin} />
-        <Route exact path="/lender/login" component={FunderLogin} />
+        <Route path="/lender" component={LenderDashboard} />
         {/* <Route exact path="/login" component={SignIn} />
         <Route exact path="/register" component={SignUp} />  */}
 
