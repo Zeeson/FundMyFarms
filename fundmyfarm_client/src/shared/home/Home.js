@@ -16,6 +16,7 @@ import "./Home.css";
 function Home() {
   return (
     <div className="home-page">
+      <HomeNav />
       <main>
         <section className="mt-3" id="hero">
           <div className="row">

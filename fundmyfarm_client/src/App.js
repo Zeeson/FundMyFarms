@@ -6,20 +6,19 @@ import Overview from "./lender/screens/Overview";
 import LendingMarket from "./lender/screens/LendingMarket";
 import PaymentPage from "./lender/screens/PaymentPage";
 import Error404 from "./shared/error404/Error404";
-import FundeeRegister from "./lendee/screens/FundeeRegister"
-import FunderRegister from "./lender/screens/FunderRegister"
+import FundeeRegister from "./lendee/screens/FundeeRegister";
+import FunderRegister from "./lender/screens/FunderRegister";
 
-import FundeeLogin from "./lendee/screens/FundeeLogin"
-import FunderLogin from "./lender/screens/FunderLogin"
+import FundeeLogin from "./lendee/screens/FundeeLogin";
+import FunderLogin from "./lender/screens/FunderLogin";
 
-import JoinUs from "./shared/JoinUs/JoinUsPage"
-import Login from "./shared/Login/LoginPage"
+import JoinUs from "./shared/JoinUs/JoinUsPage";
+import Login from "./shared/Login/LoginPage";
 import HomeNav from "./shared/components/HomeNav";
 
 function App() {
   return (
     <BrowserRouter>
-    <HomeNav />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/lender/lending-market" component={LendingMarket} />
