@@ -12,9 +12,9 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="lender/lending-market" component={LendingMarket} />
-        <Route path="lender/overview" component={Overview} />
-        <Route path="lender/view-campaign/2" component={PaymentPage} />
+        <Route path="/lender/lending-market" component={LendingMarket} />
+        <Route path="/lender/overview" component={Overview} />
+        <Route path="/lender/view-campaign/2" component={PaymentPage} />
 
         {/* Private Route available to only authenticated User */}
         {/* <PrivateRoute path="/dashboard" component={Dashboard} />

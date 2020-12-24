@@ -53,7 +53,9 @@ main p.section-name {
 }
 
 .lender-dashboard .invest-button button {
-  background-color: #2a6b37;
+  background: #046307;
+  border-radius: 15px;
+  border-color: transparent;
 }
 
 /* Investment portfolio */
@@ -74,6 +76,6 @@ main p.section-name {
 /* Account Overview */
 
 .thead-green {
-  background-color: #2a6b37;
+  background-color: #046307;
   color: #fff;
 }
