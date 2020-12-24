@@ -6,7 +6,7 @@ import "./HomeNav.css";
 
 function HomeNav() {
   return (
-    <nav className="home-navbar navbar-css navbar-expand-lg bg-white sticky-top">
+    <nav className="home-navbar navbar-css navbar-expand-lg bg-white">
       <div className="container-fluid homenav-wrapper d-flex px-4 py-3">
         <Link to="/" className="navbar-brand logo">
           <img src={Logo} alt="Fund my farm logo" />

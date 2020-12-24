@@ -124,6 +124,7 @@
 
 .home-page main #our-process .lendees-steps .step-item {
   border-radius: 100%;
+  height: 320px;
 }
 
 #our-process .process-steps .step-item h3 {

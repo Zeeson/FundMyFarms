@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className="app-footer">
       <div className="footer-wrapper d-flex justify-content-between">
-        <div className="company-logo-n-socials">
+        <div className="company-logo-n-socials footer-item">
           <div className="logo-white">
             <img src={LogoWhite} alt="logo-white img" />
           </div>
@@ -20,14 +20,14 @@ function Footer() {
             <img src={LinkedinWhite} alt="linkedin logo" />
           </div>
         </div>
-        <div className="supportetc">
+        <div className="supportetc footer-item">
           <ul>
             <li>Support</li>
             <li>FAQS</li>
             <li>Contact</li>
           </ul>
         </div>
-        <div className="homeetc">
+        <div className="homeetc footer-item">
           <ul>
             <li>Home</li>
             <li>Links</li>
@@ -35,14 +35,14 @@ function Footer() {
             <li>Feed Us</li>
           </ul>
         </div>
-        <div className="contactusetc">
+        <div className="contactusetc footer-item">
           <ul>
             <li>Contact Us</li>
             <li>Acessibility</li>
             <li>Privacy and Security</li>
           </ul>
         </div>
-        <div className="newsletter">
+        <div className="newsletter footer-item">
           <p>
             Get to know updates in the field of mechanized agriculture and know
             how often our tractors are hired.
