@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-import Logo from "../../assets/UserLogin/Logo.svg";
+import Logo from "../../assets/Logo.svg";
 import Footer from "../components/Footer";
 
 import "./Login.css";
