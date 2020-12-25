@@ -28,7 +28,7 @@ export default class LoginPage extends Component {
             <img className="m-3" src="/images/farmyJoin.png" alt="" />
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6">
-            <NavLink to="/fundee/login">
+            <NavLink to="/lender/login">
                       <button className="btn btn-success btn-large fleetjoinbtn">Funders</button>
             </NavLink>
             <img className="m-3" src="/images/tractyJoin.png" alt="" />
