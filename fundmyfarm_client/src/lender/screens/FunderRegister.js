@@ -52,14 +52,11 @@ export default class OwnerRegister extends Component {
         });
       };
 
-    registerOwner = async (e) => {
+    registerFunder = async (e) => {
         e.preventDefault();
         const {
             title, address, town, state,  fullName, gender, email, phone,  country, image, password,
         } = this.state;
-        const theState = {
-            title, address, town, state, fullName, gender, email, phone,  country, image, password,
-        }
             if(email === "" || password === ""){
                return  this.setState({
                     showError: true,
@@ -106,7 +103,7 @@ export default class OwnerRegister extends Component {
 
                           });
                     }
-                    window.location = '/login-owner';
+                    window.location = '/lender/login';
                     } catch (error) {
                         console.error(error.response.data);
                         if (error.response.data === 'email already taken') {
@@ -159,7 +156,7 @@ export default class OwnerRegister extends Component {
                 {/* <NavLink to="/owner-register"> */}
                         <button className="btn btn-success btn-large fleetjoinbtn">Funders</button>
                 {/* </NavLink>  */}
-                <form className="m-4" id="contact-form" onSubmit={this.registerOwner} >
+                <form className="m-4" id="contact-form" onSubmit={this.registerFunder} >
                         <select required className='form-group form-control' onChange={this.handleChange("title")} value={title} >
                             <option>Select Title</option>
                             <option>Mr.</option>

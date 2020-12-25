@@ -42,11 +42,11 @@ export default class Login extends Component {
       });
     } else {
       try {
-        const response = await axios.post("/farmers/signin", {
+        const response = await axios.post("/fundees/signin", {
           email,
           password,
         });
-        window.location = `/profile-farmer/${email}`;
+        window.location ='/lender';
         localStorage.setItem("JWTF", response.data.token);
         localStorage.setItem("image", response.data.user.image);
         localStorage.setItem("name", response.data.user.fullName);
@@ -162,9 +162,6 @@ export default class Login extends Component {
                     That email or password isn&apos;t recognized. Please try
                     again or register now.
                   </p>
-                  {/* <NavLink to="/join-us">
-                                        <button className="ml-2 h2 text-success">Join us</button>
-                                    </NavLink>                                */}
                 </div>
               )}
               <hr />

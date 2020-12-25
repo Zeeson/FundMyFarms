@@ -62,6 +62,37 @@ export default class Login extends Component {
             showError: true,
             showNullError: false,
           });
+        } else {
+          try {
+            const response = await axios.post('/funders/signin', {
+              email,
+              password,
+            });
+            // localStorage.setItem('JWTO', response.data.token, response.data.user);
+            window.location = "/lender"
+            localStorage.setItem('JWTO',  response.data.token);
+            localStorage.setItem("image", response.data.user.image);
+            localStorage.setItem("name", response.data.user.fullName);
+            localStorage.setItem("user", JSON.stringify(response.data.user));
+            localStorage.setItem("email", response.data.user.email);
+            // localStorage.getItem(image);
+            this.setState({
+              loggedIn: true,
+              showError: false,
+              showNullError: false,
+            });
+          } catch (error) {
+            // console.error(error.response.data);
+            if (
+              error.response.data === 'Incorrect Email'
+              || error.response.data === 'passwords do not match'
+            ) {
+              this.setState({
+                showError: true,
+                showNullError: false,
+              });
+            }
+          }
         }
       }
     }
@@ -94,50 +125,32 @@ export default class Login extends Component {
                   />
                 </div>
 
-                <div className="form-group">
-                  <input
-                    type="password"
-                    className="form-control"
-                    value={password}
-                    onChange={this.handleChange("password")}
-                    placeholder="Password"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="btn btn-lg btn-success contactbtn mb-5 "
-                >
-                  Login
-                </button>
-                <div className="form-group ml-3 remember_forgot">
-                  <input
-                    type="checkbox"
-                    checked="checked"
-                    name="remember"
-                    placeholder="Remember me"
-                  />
-                  <span className="m-2">Remember me </span>
-                  <NavLink to="/forgotPassword">
-                    <span className="ml-5 text-success">Forgot Password?</span>
-                  </NavLink>
-                </div>
-              </form>
-              {showNullError && (
-                <div>
-                  <p className="text-danger font-weight-bold">
-                    The email or password cannot be empty.
-                  </p>
-                </div>
-              )}
-              {showError && (
-                <div>
-                  <p className="text-danger font-weight-bold">
-                    That email or password isn&apos;t recognized. Please try
-                    again or register now.
-                  </p>
-                  {/* <NavLink to="/join-us">
-                                        <button className="ml-2 h2 text-success">Join us</button>
-                                    </NavLink>                                */}
+                                    </div>
+                                </form>
+                                {showNullError && (
+                                    <div>
+                                    <p className="text-danger font-weight-bold">The email or password cannot be empty.</p>
+                                    </div>
+                                )}
+                                 {showError && (
+                                    <div
+                                    >
+                                    <p className="text-danger font-weight-bold">
+                                        That email or password isn&apos;t recognized. Please try
+                                        again or register now.
+                                    </p>
+                                    </div>
+                                )}
+                                <hr/>
+                            <div className="mb-3">
+                                <p className="h3 mb-3">Dont have an account ?</p>
+                                <NavLink to="/register">
+                                    <button className="btn h2 btn-success btn-large joinbtn">Join us</button>
+                                </NavLink>
+                            </div>
+                        </div>
+                    <div className="col-sm-12 col-md-12 col-lg-4"> </div>
+
                 </div>
               )}
               <hr />
