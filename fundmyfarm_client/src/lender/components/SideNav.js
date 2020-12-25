@@ -43,9 +43,9 @@ const NavItems = [
 
 function SideNav({ avatar, name }) {
   return (
-    <div className="d-flex justify-content-between col-sm-2 pr-0" id="sidenav">
+    <div className="d-flex justify-content-between pr-0" id="sidenav">
       <div className="sidebar-top">
-        <div className="logo p-3 mb-4 text-center ">
+        <div className="logo mb-4 text-center ">
           <img src={avatar} alt="investor img" />
           <h2 className="investor-name">{name}</h2>
           <p className="role-tag">Investor</p>

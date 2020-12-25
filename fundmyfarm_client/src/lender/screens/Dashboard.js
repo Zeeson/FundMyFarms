@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, useRouteMatch, Switch } from "react-router-dom";
 
+import Avatar from "../../assets/Lender/avatar.png";
 import SideNav from "../components/SideNav";
 import Overview from "./Overview";
 import LendingMarket from "./LendingMarket";
@@ -14,8 +15,8 @@ function Dashboard() {
   const { url } = useRouteMatch();
   return (
     <div id="dashboard">
-      <div className="dashboard-container row">
-        <SideNav name="Umar Farouq" />
+      <div className="dashboard-container d-flex">
+        <SideNav avatar={Avatar} name="Umar Farouq" />
         <div className="col-sm-10 main-content px-0">
           <Switch>
             <Route path={`${url}/overview`} component={Overview} />
