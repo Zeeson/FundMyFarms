@@ -2,9 +2,6 @@ import React, { useEffect, createContext, useReducer, useContext } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./shared/home/Home";
-import Overview from "./lender/screens/Overview";
-import LendingMarket from "./lender/screens/LendingMarket";
-import PaymentPage from "./lender/screens/PaymentPage";
 import Error404 from "./shared/error404/Error404";
 import FundeeRegister from "./lendee/screens/FundeeRegister";
 import FunderRegister from "./lender/screens/FunderRegister"
@@ -13,10 +10,10 @@ import FundeeLogin from "./lendee/screens/FundeeLogin";
 import FunderLogin from "./lender/screens/FunderLogin"
 
 import LenderDashboard from "./lender/screens/Dashboard";
+import LendeeDashboard from "./lendee/screens/Dashboard";
 
 import JoinUs from "./shared/JoinUs/JoinUsPage";
 import Login from "./shared/Login/LoginPage";
-import HomeNav from "./shared/components/HomeNav";
 
 function App() {
   return (
@@ -30,6 +27,7 @@ function App() {
         <Route exact path="/lendee/login" component={FundeeLogin} />
         <Route exact path="/lender/login" component={FunderLogin} />
         <Route path="/lender" component={LenderDashboard} />
+        <Route path="/lendee" component={LendeeDashboard} />
         {/* <Route exact path="/login" component={SignIn} />
         <Route exact path="/register" component={SignUp} />  */}
 

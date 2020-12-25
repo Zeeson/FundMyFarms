@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 // import Button from 'react-bootstrap/Button';
 import { NavLink } from "react-router-dom";
-import "./Login.css";
+import "./LendeeLogin.css";
 // import Navbar from './Navbar';
 import {
   ToastsContainer,
