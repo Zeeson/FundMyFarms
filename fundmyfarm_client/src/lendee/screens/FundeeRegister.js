@@ -54,14 +54,11 @@ export default class FarmerRegister extends Component {
         });
       };
 
-    registerFarmer = async (e) => {
+    registerFundee = async (e) => {
         e.preventDefault();
         const {
             title, address, town, state, farmSize, farmAddress, crops, fullName, gender, email, phone,  country, image, password,
         } = this.state;
-        const theState = {
-            title, address, town, state, farmSize, farmAddress, crops, fullName, gender, email, phone,  country, image, password,
-        }
             if(email === "" || password === ""){
                return  this.setState({
                     showError: true,
@@ -108,7 +105,7 @@ export default class FarmerRegister extends Component {
 
                           });
                     }
-                    window.location = '/login-farmer';
+                    window.location = '/lendee/login';
                     } catch (error) {
                         console.error(error.response.data);
                         if (error.response.data === 'email already taken') {
@@ -158,7 +155,7 @@ export default class FarmerRegister extends Component {
                     {/* <NavLink to="/farmer-register"> */}
                             <button className="btn btn-success btn-large joinbtn">Fundees</button>
                     {/* </NavLink>  */}
-                    <form className="m-4" id="contact-form" onSubmit={this.registerFarmer} >
+                    <form className="m-4" id="contact-form" onSubmit={this.registerFundee} >
                                 <select required className='form-group form-control' onChange={this.handleChange("title")} value={title} >
                                     <option>Select Title</option>
                                     <option>Mr.</option>
