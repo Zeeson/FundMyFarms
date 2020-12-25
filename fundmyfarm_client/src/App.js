@@ -16,6 +16,7 @@ import JoinUs from "./shared/JoinUs/JoinUsPage";
 import Login from "./shared/Login/LoginPage";
 
 import UserLogin from "./shared/userlogin/Login";
+import UserRegister from "./shared/userRegister/Register";
 function App() {
   return (
     <BrowserRouter>
@@ -29,9 +30,11 @@ function App() {
         {/* <Route exact path="/lender/login" component={FunderLogin} /> */}
         <Route path="/lender" component={LenderDashboard} />
         <Route path="/lendee" component={LendeeDashboard} />
-        <Route path="/userlogin" component={UserLogin} />
+
         {/* <Route exact path="/login" component={SignIn} />
         <Route exact path="/register" component={SignUp} />  */}
+        <Route path="/userlogin" component={UserLogin} />
+        <Route path="/userregister" component={UserRegister} />
 
         {/* Private Route available to only authenticated User */}
         {/* <PrivateRoute path="/dashboard" component={Dashboard} />
