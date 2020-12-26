@@ -30,7 +30,7 @@ require("./src/config/fundeePassport");
 const fundeeUrl = require("./src/routes/fundeeRoute");
 const funderUrl = require("./src/routes/funderRoute");
 
-const itemUrl = require("./src/routes/itemRoute");
+const campaignUrl = require("./src/routes/campaignRoute");
 const contactUrl = require("./src/routes/contactRoute");
 
 
@@ -84,7 +84,7 @@ app.use((req, res, next) => {
 // routes
 app.use("/fundees", fundeeUrl);
 app.use("/funders", funderUrl);
-app.use("/items", itemUrl);
+app.use("/campaigns", campaignUrl);
 app.use("/contact-us", contactUrl);
 
 
@@ -113,7 +113,6 @@ app.listen(PORT, () => {
     database()
     console.log(`Server listening on port ${PORT}`)
 })
-
 
 app.on('error', error => {
     console.log(`Error occured on the server ${error}`)

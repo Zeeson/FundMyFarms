@@ -44,9 +44,9 @@ function Login(props) {
     <>
       <header>
         <nav class="navbar">
-          <a class="navbar-brand" href="#">
+          <Link class="navbar-brand" to="/">
             <img src={Logo} width="221" height="60" alt="logo" loading="lazy" />
-          </a>
+          </Link>
         </nav>
       </header>
       <main className="userlogin">

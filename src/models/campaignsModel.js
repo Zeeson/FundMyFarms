@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 
-const itemsModel  = new Schema({
+const campaignModel  = new Schema({
     name:{
         type:String,
         trim: true,
@@ -38,4 +38,4 @@ const itemsModel  = new Schema({
 
 })
 
-module.exports = mongoose.model('items', itemsModel)
+module.exports = mongoose.model('campaigns', campaignModel)
