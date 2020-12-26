@@ -12,7 +12,7 @@
   overflow-y: scroll !important;
 }
 
-.main-content::-webkit-scrollbar {
+/* .main-content::-webkit-scrollbar {
   width: 30px;
 }
 
@@ -26,4 +26,4 @@
 
 .main-content::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
+} */
