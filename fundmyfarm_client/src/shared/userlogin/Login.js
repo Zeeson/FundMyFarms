@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 import Logo from "../../assets/Logo.svg";
+import showPwdImg from "../../assets/UserLogin/show-password.svg";
+import hidePwdImg from "../../assets/UserLogin/hide-password.svg";
 import Footer from "../components/Footer";
 
 import "./Login.css";
@@ -13,6 +15,7 @@ function Login(props) {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isRevealPwd, setIsRevealPwd] = useState(false);
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -71,14 +74,23 @@ function Login(props) {
           </div>
           <div class="form-group">
             <label for="passwordInput">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="passwordInput"
-              name="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div>
+              <input
+                type={isRevealPwd ? "text" : "password"}
+                class="form-control"
+                id="passwordInput"
+                name="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <img
+                title={isRevealPwd ? "Hide password" : "Show password"}
+                src={isRevealPwd ? hidePwdImg : showPwdImg}
+                onClick={() => setIsRevealPwd((prevState) => !prevState)}
+                width="25"
+                height="20"
+              />
+            </div>
           </div>
 
           <div className="buttons-container text-right">
