@@ -62,9 +62,9 @@ function Register(props) {
     <div id="user-register">
       <header>
         <nav class="navbar">
-          <a class="navbar-brand" href="#">
+          <Link to="/" class="navbar-brand" href="#">
             <img src={Logo} width="221" height="60" alt="logo" loading="lazy" />
-          </a>
+          </Link>
         </nav>
       </header>
       <main>
@@ -182,7 +182,7 @@ function Register(props) {
                 </div>
                 <div className="buttons-container text-center">
                   <button type="submit" className="text-white">
-                    Creat account
+                    Create account
                   </button>
                 </div>
               </form>
@@ -257,7 +257,7 @@ function Register(props) {
                 </div>
                 <div className="buttons-container text-center">
                   <button type="submit" className="text-white">
-                    Creat account
+                    Create account
                   </button>
                 </div>
               </form>
