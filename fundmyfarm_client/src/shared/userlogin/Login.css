@@ -25,7 +25,7 @@ main.userlogin form {
   margin: 0 auto;
   background: #ffffff;
   box-shadow: 0px 4px 20px rgba(4, 99, 7, 0.4);
-  padding: 82px 116px;
+  padding: 82px 7%;
 }
 
 main.userlogin form h2 {
@@ -60,6 +60,16 @@ main.userlogin .form-group input {
 
 main.userlogin .buttons-container {
   margin-top: 50px;
+}
+
+main.userlogin .form-group div {
+  position: relative;
+}
+
+main.userlogin .form-group div img {
+  position: absolute;
+  right: 28px;
+  bottom: 25px;
 }
 
 main.userlogin button {
