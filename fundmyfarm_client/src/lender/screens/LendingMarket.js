@@ -1,6 +1,7 @@
 import React from "react";
 
 import CampaignPicture from "../../assets/tractor-image.jpg";
+import CampaignerImg from "../../assets/user-image.png";
 import Footer from "../../shared/components/Footer";
 import CampaignItem from "../components/CampaignItem";
 import Navbar from "../components/Navbar";
@@ -38,11 +39,40 @@ const campaignData = [
     proposedRepaymentTime: 6,
     campaignPic: CampaignPicture,
   },
+  {
+    name: "Ngozi John",
+    age: 25,
+    loanAmount: 80000,
+    currentAmount: 45000,
+    amountLeft: 25000,
+    currentAmountPer: 56,
+    proposedRepaymentTime: 6,
+    campaignPic: CampaignPicture,
+  },
+  {
+    name: "Ngozi John",
+    age: 25,
+    loanAmount: 80000,
+    currentAmount: 45000,
+    amountLeft: 25000,
+    currentAmountPer: 56,
+    proposedRepaymentTime: 6,
+    campaignPic: CampaignPicture,
+  },
+  {
+    name: "Ngozi John",
+    age: 25,
+    loanAmount: 80000,
+    currentAmount: 45000,
+    amountLeft: 25000,
+    currentAmountPer: 56,
+    proposedRepaymentTime: 6,
+    campaignPic: CampaignPicture,
+  },
 ];
 function LendingMarket() {
   return (
     <>
-      <Navbar />
       <div className="lending-market-lender mt-4">
         <header>
           <h1 className="mb-2">Ongoing Campaigns</h1>
@@ -94,6 +124,7 @@ function LendingMarket() {
                 targetAmount={campaign.loanAmount}
                 repaymentPeriod={campaign.proposedRepaymentTime}
                 campaignImage={campaign.campaignPic}
+                campaignerImage={CampaignerImg}
                 currentAmountPer={campaign.currentAmountPer}
                 currentAmount={campaign.currentAmount}
                 amountLeft={campaign.amountLeft}
@@ -102,7 +133,6 @@ function LendingMarket() {
           })}
         </main>
       </div>
-      <Footer />
     </>
   );
 }
