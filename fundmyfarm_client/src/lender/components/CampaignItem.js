@@ -10,15 +10,22 @@ function CampaignItem({
   currentAmountPer,
   currentAmount,
   amountLeft,
+  campaignerImage,
 }) {
   return (
-    <div className="d-flex mb-4 pr-4 campaignItem">
-      <div className="campaign-image mr-3">
+    <div className="mb-4 campaignItem">
+      <div className="campaign-image">
         <img src={campaignImage} alt="" />
       </div>
       <div className="campaign-details">
         <div className="d-flex justify-content-between align-items-center py-2">
-          <h2 className="campaign-title">Fund {name} Campaign</h2>
+          <div className="d-flex">
+            <div className="campaigner-img">
+              <img src={campaignerImage} alt="" width="40" height="40" />
+            </div>
+            <h2 className="campaign-title">{name}</h2>
+          </div>
+
           <p className="target-amount">₦ {targetAmount}</p>
         </div>
         <div className="loan-progress mb-4">
@@ -37,12 +44,12 @@ function CampaignItem({
             <span className="amount-left">N {amountLeft}</span>
           </div>
         </div>
-        <p className="repayment__period">
-          Proposed Repayment Period:{" "}
-          <span>
+        <div className="repayment__period d-flex justify-content-between">
+          <p>Proposed Repayment Period:</p>
+          <span className="ml-5">
             <strong>{repaymentPeriod} Months</strong>
           </span>
-        </p>
+        </div>
         <Link to="view-campaign/2" className="invest-button mt-4">
           <button className="btn btn-primary">Invest Now</button>
         </Link>
