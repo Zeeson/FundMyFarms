@@ -8,6 +8,7 @@ import LendingMarket from "./LendingMarket";
 import Investments from "./Investments";
 import Settings from "./Settings";
 import ViewCampaign from "./ViewCampaign";
+import PaymentPage from "./PaymentPage";
 
 import "./Dashboard.css";
 
@@ -17,7 +18,7 @@ function Dashboard() {
     <div id="dashboard">
       <div className="dashboard-container d-flex">
         <SideNav avatar={Avatar} name="Umar Farouq" />
-        <div className="col-sm-10 main-content px-0">
+        <div className="col-sm-10 main-content px-0 w-full">
           <Switch>
             <Route path={`${url}/overview`} component={Overview} />
             <Route
@@ -27,7 +28,8 @@ function Dashboard() {
             />
             <Route path={`${url}/settings`} component={Settings} exact />
             <Route path={`${url}/view-campaign/:id`} component={ViewCampaign} />
-            <Route path={`${url}/investments`} component={Investments} />
+            <Route path={`${url}/paymentpage/:id`} component={PaymentPage} />
+            <Route path={`${url}/investments`} component={Investments} exact />
           </Switch>
         </div>
       </div>

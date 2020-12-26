@@ -1,11 +1,9 @@
 .payment-page {
-  font-family: "Nunito", sans-serif;
-  padding: 0 7%;
+  padding: 0 2%;
 }
 
 .payment-page h1 {
   font-weight: 500;
-  font-family: "Ubuntu", sans-serif;
   font-size: 2.25rem;
   line-height: 1.2;
 }

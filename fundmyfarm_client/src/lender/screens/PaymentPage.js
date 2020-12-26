@@ -2,8 +2,6 @@ import React from "react";
 
 import CampaignPicture from "../../assets/tractor-image.jpg";
 import CampaignerPicture from "../../assets/user-image.png";
-import Navbar from "../components/Navbar";
-import Footer from "../../shared/components/Footer";
 import "./PaymentPage.css";
 
 const campaignInfo = {
@@ -17,8 +15,7 @@ const campaignInfo = {
 
 function PaymentPage() {
   return (
-    <>
-      <Navbar />
+    <div id="payment">
       <div className="payment-page mt-3">
         <h1>Fund {campaignInfo.name} campaign</h1>
         <p className="loan__amount_label mb-0 mt-2">Loan Amount</p>
@@ -104,8 +101,7 @@ function PaymentPage() {
           </div>
         </div>
       </div>
-      <Footer />
-    </>
+    </div>
   );
 }
 
