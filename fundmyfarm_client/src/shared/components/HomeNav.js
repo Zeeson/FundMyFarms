@@ -41,13 +41,13 @@ function HomeNav() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/userlogin" className="nav-link">
+              <Link to="/login" className="nav-link">
                 Login
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/userregister"
+                to="/register"
                 type="button"
                 className="nav-link btn btn-primary text-white"
               >

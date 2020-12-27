@@ -94,9 +94,11 @@ function Login(props) {
           </div>
 
           <div className="buttons-container text-right">
-            <button type="submit" class="btn btn-primary">
-              Submit
-            </button>
+            <Link to="/lender/overview">
+              <button type="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </Link>
           </div>
           <p className="forgot-password">Forget Password?</p>
           <div className="no-account text-center">

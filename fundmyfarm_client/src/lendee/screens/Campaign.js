@@ -3,13 +3,13 @@ import "./Campaign.css";
 
 function Campaign() {
   return (
-    <div>
+    <div id="campaign-lendee">
       <div className="d-flex">
         <div className="left w-50 pr-5">
           <div className="campaign-image">
             <img src={0} alt="" />
           </div>
-          <div className="campaign-buttons">
+          <div className="campaign-buttons d-flex justify-content-between mt-5">
             <button>End Campaign</button>
             <button>Edit Campaign</button>
             <button>Share Campaign</button>
