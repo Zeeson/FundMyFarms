@@ -47,9 +47,9 @@ function Login(props) {
     <>
       <header>
         <nav class="navbar">
-          <a class="navbar-brand" href="#">
+          <Link to="/" className="navbar-brand" href="#">
             <img src={Logo} width="221" height="60" alt="logo" loading="lazy" />
-          </a>
+          </Link>
         </nav>
       </header>
       <main className="userlogin">
@@ -94,9 +94,11 @@ function Login(props) {
           </div>
 
           <div className="buttons-container text-right">
-            <button type="submit" class="btn btn-primary">
-              Submit
-            </button>
+            <Link to="/lender/overview">
+              <button type="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </Link>
           </div>
           <p className="forgot-password">Forget Password?</p>
           <div className="no-account text-center">

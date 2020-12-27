@@ -1,7 +1,12 @@
+.box-outer {
+  width: 75%;
+  height: 600px;
+  margin: 30px auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(4, 99, 7, 0.4);
+}
 .box {
-  width: 100%;
-  border: 1px solid #ddd;
-  height: 100%;
+  /* border: 1px solid #ddd; */
 }
 .box .steps {
   border-bottom: 1px solid #ddd;
@@ -47,25 +52,25 @@
   z-index: 2;
 }
 .box .steps ul li.done div {
-  border-color: #20a8d8 !important;
+  border-color: #c3dac4 !important;
   color: #fff !important;
-  background: #20a8d8 !important;
+  background: #c3dac4 !important;
 }
 .box .steps ul li.done div::after {
-  border-left: 30px solid #20a8d8;
+  border-left: 30px solid #c3dac4;
 }
 .box .steps ul li.active div {
-  border-color: #167495 !important;
+  border-color: #046307 !important;
   color: #fff !important;
-  background: #167495 !important;
+  background: #046307 !important;
 }
 .box .steps ul li.active div::after {
-  border-left: 30px solid #167495;
+  border-left: 30px solid #046307;
 }
 
 .box .step-component {
   padding: 20px;
-  height: 200px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
