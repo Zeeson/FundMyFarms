@@ -8,7 +8,7 @@ function HomeNav() {
   return (
     <nav className="home-navbar navbar-css navbar-expand-lg bg-white">
       <div className="container-fluid homenav-wrapper d-flex px-4 py-3">
-        <Link to="/" className="navbar-brand logo">
+        <Link to="/" className="navbar-brand">
           <img src={Logo} alt="Fund my farm logo" />
         </Link>
         <button
@@ -41,7 +41,7 @@ function HomeNav() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/userlogin" className="nav-link">
+              <Link to="/login" className="nav-link">
                 Login
               </Link>
             </li>

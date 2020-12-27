@@ -3,7 +3,7 @@ import "./CreateCampaign.css";
 
 const firstComponent = () => {
   return (
-    <div>
+    <div className="component-item">
       <div class="form-group">
         <label htmlFor="campaignName">Campaign Name</label>
         <input type="text" class="form-control" id="campaignName" />
@@ -13,7 +13,7 @@ const firstComponent = () => {
 };
 const secondComponent = () => {
   return (
-    <div>
+    <div className="component-item">
       <h2>Upload campaign image</h2>
       <p>Upload your Video in response to you campaign as this matters alot</p>
       <img src={"rule"} alt="" />
@@ -32,7 +32,7 @@ const secondComponent = () => {
 };
 const thirdComponent = () => {
   return (
-    <div>
+    <div className="component-item">
       <h2>Campaign Description</h2>
       <div class="form-group">
         <label for="campaignDesc">Enter your campaign description</label>
@@ -43,7 +43,7 @@ const thirdComponent = () => {
 };
 const finalComponent = () => {
   return (
-    <div>
+    <div className="component-item">
       <h2>Invite a Recommender</h2>
       <p>Fill in details for a recommender you want to invite.</p>
       <div>
@@ -72,7 +72,7 @@ function CreateCampaign() {
   const [steps, setSteps] = useState([
     {
       key: "firstStep",
-      label: "My First Step",
+      label: "Campaign Name",
       isDone: true,
       component: firstComponent,
     },
@@ -100,7 +100,7 @@ function CreateCampaign() {
 
   const handleNext = () => {
     if (steps[steps.length - 1].key === activeStep.key) {
-      alert("You have completed all steps.");
+      alert("You have completed all steps. wait for approval");
       return;
     }
 
@@ -129,10 +129,9 @@ function CreateCampaign() {
 
   return (
     <div id="CreateCampaign">
-      <header></header>
       <main>
-        <h1>New Campaign</h1>
-        <div>
+        <h1 className="text-center">New Campaign</h1>
+        <div className="box-outer">
           <div className="box">
             <div className="steps">
               <ul className="nav">
@@ -161,6 +160,7 @@ function CreateCampaign() {
                 value="Back"
                 onClick={handleBack}
                 disabled={steps[0].key === activeStep.key}
+                className="btn btn-primary"
               />
               <input
                 type="button"
@@ -170,6 +170,7 @@ function CreateCampaign() {
                     : "Submit"
                 }
                 onClick={handleNext}
+                className="btn btn-primary"
               />
             </div>
           </div>

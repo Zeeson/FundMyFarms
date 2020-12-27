@@ -47,7 +47,11 @@ function Login(props) {
     <>
       <header>
         <nav class="navbar">
+<<<<<<< HEAD
           <Link class="navbar-brand" to="/">
+=======
+          <Link to="/" className="navbar-brand" href="#">
+>>>>>>> c49153237e81b5c4cb0c280fb27b06d18b5fa90e
             <img src={Logo} width="221" height="60" alt="logo" loading="lazy" />
           </Link>
         </nav>
@@ -94,9 +98,11 @@ function Login(props) {
           </div>
 
           <div className="buttons-container text-right">
-            <button type="submit" class="btn btn-primary">
-              Submit
-            </button>
+            <Link to="/lender/overview">
+              <button type="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </Link>
           </div>
           <p className="forgot-password">Forget Password?</p>
           <div className="no-account text-center">

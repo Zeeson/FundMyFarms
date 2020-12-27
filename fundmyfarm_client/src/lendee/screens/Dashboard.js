@@ -7,6 +7,7 @@ import Overview from "./Overview";
 import CreateCampaign from "./CreateCampaign";
 
 import "./Dashboard.css";
+import Campaign from "./Campaign";
 
 function Dashboard() {
   const { url } = useRouteMatch();
@@ -18,9 +19,9 @@ function Dashboard() {
           <Switch>
             <Route path={`${url}/overview`} component={Overview} />
             <Route path={`${url}/new`} component={CreateCampaign} exact />
-            {/* 
-            <Route path={`${url}/settings`} component={Settings} exact />
-            <Route path={`${url}/view-campaign/:id`} component={ViewCampaign} />
+
+            <Route path={`${url}/campaign`} component={Campaign} exact />
+            {/*  <Route path={`${url}/view-campaign/:id`} component={ViewCampaign} />
             <Route path={`${url}/investments`} component={Investments} /> */}
           </Switch>
         </div>

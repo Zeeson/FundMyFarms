@@ -38,7 +38,9 @@ function Overview({
             <span>N {50000}</span>
           </div>
         </div>
-        <div className="loan-chart">pie-chart</div>
+        <div className="loan-chart">
+          <Link to="/lendee/new">New Campaign</Link>
+        </div>
       </div>
       <div className="overview-mid d-flex justify-content-between">
         <div className="social-share px-3 py-2">
