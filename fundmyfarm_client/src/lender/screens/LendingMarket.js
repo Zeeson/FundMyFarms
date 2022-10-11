@@ -10,7 +10,7 @@ import "./LendingMarket.css";
 
 const campaignData = [
   {
-    name: "Musa Haruna",
+    name: "Geoge Leon",
     age: 32,
     loanAmount: 50000,
     currentAmount: 35000,

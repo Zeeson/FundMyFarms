@@ -12,7 +12,7 @@ import "./Overview.css";
 
 const campaignData = [
   {
-    name: "Musa Haruna",
+    name: "John Doe",
     age: 32,
     loanAmount: 50000,
     currentAmount: 35000,
@@ -20,7 +20,7 @@ const campaignData = [
     currentAmountPer: 70,
   },
   {
-    name: "Idi Audu",
+    name: "Adeola Ajani",
     age: 52,
     loanAmount: 30000,
     currentAmount: 15000,
@@ -44,7 +44,7 @@ const theData = [
     rate: 3,
     term: 10,
     return: 39000,
-    due: "31-09-2021",
+    due: "31-09-2023",
     status: "Active",
   },
   {
@@ -53,7 +53,7 @@ const theData = [
     rate: 3,
     term: 10,
     return: 39000,
-    due: "31-09-2021",
+    due: "31-12-2023",
     status: "Active",
   },
   {
@@ -62,7 +62,7 @@ const theData = [
     rate: 3,
     term: 10,
     return: 39000,
-    due: "31-09-2021",
+    due: "31-12-2022",
     status: "Active",
   },
   {
@@ -71,7 +71,7 @@ const theData = [
     rate: 3,
     term: 10,
     return: 39000,
-    due: "31-09-2021",
+    due: "01-09-2024",
     status: "Active",
   },
 ];
