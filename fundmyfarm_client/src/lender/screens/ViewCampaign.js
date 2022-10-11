@@ -52,7 +52,7 @@ function ViewCampaign() {
               />
               <div className="d-flex flex-column">
                 <span>{data.name}</span>
-                <span>12 December 2020</span>
+                <span>12 December 2023</span>
               </div>
             </div>
           </div>
